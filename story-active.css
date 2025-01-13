@@ -69,7 +69,32 @@
 
   main {
     color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
+/* 
+  track {
+    color: #f00;
+    font-size: 16px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+} */
 
+.subtitles {
+  position: fixed; /* Vastzetten van de ondertitels op het scherm */
+  top: 90%; /* Verplaats de ondertitels naar beneden (dichter bij de onderkant) */
+  left: 50%; /* Plaatst de ondertitels in het midden van de breedte */
+  /* transform: translateX(-50%); */
+  width: 100%; /* Zorg ervoor dat de ondertitels de volledige breedte van het scherm innemen */
+  text-align: center; /* Zorg ervoor dat de tekst in het midden wordt uitgelijnd */
+  color: white; /* Zet de kleur van de tekst op wit */
+  font-family: var(--font-poppins);
+  font-weight: bold; 
+  font-size: 36px;
+  z-index: 10; /*Zorg ervoor dat de ondertitels boven andere elementen verschijnen */
+
+}
+
+  
 
   

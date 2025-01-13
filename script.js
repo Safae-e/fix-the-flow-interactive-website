@@ -1,5 +1,5 @@
 let div = document.querySelector('.play')
-let playbutton = document.querySelector('button')
+let playbutton = document.querySelector('playbutton')
 playbutton.addEventListener('click', paused)
 
 function paused() {
@@ -8,7 +8,9 @@ function paused() {
   }
 
 
-const audio = document.getElementById('audio');
-const content = document.querySelector('.content');
-let scrollInterval;
-
+  let button = document.querySelector('button');
+  let navigation = document.querySelector('nav');
+  
+  button.addEventListener("click", function(){
+    navigation.classList.toggle('show-menu');
+  })
