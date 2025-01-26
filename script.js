@@ -1,5 +1,5 @@
 let div = document.querySelector('.play')
-let playbutton = document.querySelector('playbutton')
+let playbutton = document.querySelector('button')
 playbutton.addEventListener('click', paused)
 
 function paused() {
@@ -13,4 +13,5 @@ function paused() {
   
   button.addEventListener("click", function(){
     navigation.classList.toggle('show-menu');
+    console.log("doe het")
   })

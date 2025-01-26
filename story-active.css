@@ -9,6 +9,15 @@
     
  }
 
+ header {
+  display: grid;
+  grid-template-columns: 1.3fr 1fr 1fr;
+  }
+
+  img {
+    grid-column: 2;
+  }
+
  .content {
     width: 80%;
     max-width: 800px;
